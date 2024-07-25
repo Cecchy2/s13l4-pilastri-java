@@ -4,7 +4,7 @@ import enums.Dipartimenti;
 
 public class DipendenteFullTime extends Dipendente {
 
-    //costruttori
+    //lista costruttori-------------------
     public DipendenteFullTime(int matricola, double stipendio, Dipartimenti dipartimento) {
         super(matricola, stipendio, dipartimento);
     }
@@ -13,15 +13,14 @@ public class DipendenteFullTime extends Dipendente {
         super(matricola, 0, dipartimento);
 
         calculateSalary();
-
     }
 
+    //lista metodi-------------------------
 
     @Override
     public void calculateSalary() {
         double stipendioMensile = 3000.00;
         this.stipendio = stipendioMensile;
-
     }
 
     @Override
@@ -31,9 +30,7 @@ public class DipendenteFullTime extends Dipendente {
                 '}';
     }
 
-
     @Override
     public void checkIn() {
-
     }
 }

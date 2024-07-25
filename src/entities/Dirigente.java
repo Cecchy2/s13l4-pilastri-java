@@ -3,6 +3,9 @@ package entities;
 import enums.Dipartimenti;
 
 public class Dirigente extends Dipendente {
+
+    //lista costruttori-------------------
+
     public Dirigente(int matricola, double stipendio, Dipartimenti dipartimento) {
         super(matricola, stipendio, dipartimento);
     }
@@ -11,9 +14,9 @@ public class Dirigente extends Dipendente {
         super(matricola, 0, dipartimento);
 
         calculateSalary();
-
     }
 
+    //lista metodi-------------------------
 
     @Override
     public void calculateSalary() {
@@ -30,6 +33,5 @@ public class Dirigente extends Dipendente {
 
     @Override
     public void checkIn() {
-
     }
 }

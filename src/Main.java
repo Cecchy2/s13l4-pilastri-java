@@ -11,7 +11,6 @@ public class Main {
         Dipendente dipendente2 = new Dipendente(5663228, 40000.00, VENDITE);
         Dipendente dipendente3 = new Dipendente(4434552, 50000.00, AMMINISTRAZIONE);
 
-
         Dipendente[] dipendenti = {dipendente1, dipendente2, dipendente3};
 
         for (int i = 0; i < dipendenti.length; i++) {
@@ -23,14 +22,12 @@ public class Main {
 
         /*Dipendente[] dipendenti = new Dipendente[6];
 
-
         dipendenti[0] = new DipendenteFullTime(4434552, Dipartimenti.PRODUZIONE);
         dipendenti[1] = new DipendenteFullTime(4598877, Dipartimenti.VENDITE);
         dipendenti[2] = new DipendentePartTime(5663228, Dipartimenti.VENDITE);
         dipendenti[3] = new DipendentePartTime(4594305, Dipartimenti.PRODUZIONE);
         dipendenti[4] = new Dirigente(2345345, Dipartimenti.AMMINISTRAZIONE);
         dipendenti[5] = new Dirigente(6543873, Dipartimenti.AMMINISTRAZIONE);
-
 
         double stipendioTotale = 0;
 
@@ -39,15 +36,12 @@ public class Main {
             stipendioTotale += dipendenti[i].getStipendio();
 
             System.out.println(stipendioTotale);
-
-
         }
 
     }*/
         /*----------------ESERCIZIO3-------------------*/
 
         Lavoratore[] lavoratori = new Lavoratore[8];
-
 
         lavoratori[0] = new DipendenteFullTime(4434552, Dipartimenti.PRODUZIONE);
         lavoratori[1] = new DipendenteFullTime(4598877, Dipartimenti.VENDITE);
@@ -58,7 +52,6 @@ public class Main {
         lavoratori[6] = new Volontario("Diego Armando", 25, "CV di Diego");
         lavoratori[7] = new Volontario("Bruce Willis", 70, "CV di Bruce");
 
-
         double stipendioTotale = 0;
 
         for (int i = 0; i < lavoratori.length; i++) {
@@ -66,7 +59,7 @@ public class Main {
             lavoratori[i].checkIn();
 
             if (lavoratori[i] instanceof Dipendente) {
-                Dipendente dipendente = (Dipendente) lavoratori[i];
+                Dipendente dipendente = (Dipendente) lavoratori[i]; //casting esplicito
                 stipendioTotale += dipendente.getStipendio();
             }
         }

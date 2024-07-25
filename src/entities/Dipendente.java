@@ -8,8 +8,7 @@ public abstract class Dipendente implements Lavoratore {
     private int matricola;
     private Dipartimenti dipartimento;
 
-
-    //lista costruttori
+    //lista costruttori-------------------
 
     public Dipendente(int matricola, double stipendio, Dipartimenti dipartimento) {
         this.matricola = matricola;
@@ -17,9 +16,7 @@ public abstract class Dipendente implements Lavoratore {
         this.dipartimento = dipartimento;
     }
 
-
-    //lista metodi
-
+    //lista metodi-------------------------
 
     @Override
     public void checkIn() {

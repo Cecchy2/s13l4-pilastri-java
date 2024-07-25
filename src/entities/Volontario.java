@@ -7,11 +7,15 @@ public class Volontario implements Lavoratore {
     private int eta;
     private String cv;
 
+    //lista costruttori-------------------
+
     public Volontario(String nome, int eta, String cv) {
         this.nome = nome;
         this.eta = eta;
         this.cv = cv;
     }
+
+    //lista metodi-------------------------
 
     public String getNome() {
         return nome;
