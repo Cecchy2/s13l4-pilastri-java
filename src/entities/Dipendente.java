@@ -1,10 +1,11 @@
 package entities;
 
 import enums.Dipartimenti;
+import interfaces.Lavoratore;
 
-public class Dipendente {
+public abstract class Dipendente implements Lavoratore {
+    protected double stipendio;
     private int matricola;
-    private double stipendio;
     private Dipartimenti dipartimento;
 
 
@@ -19,6 +20,13 @@ public class Dipendente {
 
     //lista metodi
 
+
+    @Override
+    public void checkIn() {
+        System.out.println("Dipendente con matricola " + matricola + " ha iniziato il suo turno.");
+    }
+
+    public abstract void calculateSalary();
 
     public int getMatricola() {
         return matricola;
